@@ -1,3 +1,121 @@
 *{
-    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pin {
+    background: rgb(255, 197, 222);
+    height: 750px;
+    width: 60%;
+    float: left;
+}
+
+.blu {
+    background: rgb(202, 220, 228);
+    height: 750px;
+    width: 40%;
+    float: right;
+}
+
+.pho img{
+    width: 480px;
+    height: 580px;
+    position: absolute;
+    top: 100px;
+    left: 680px;
+}
+
+.fi{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 400px;
+    padding-right: 200px;
+    color: #fff;
+}
+
+.two{
+    font-size: 70px;
+    font-family: merlin;
+    text-align: center;
+    padding-right: 200px;
+    color: #fff;
+}
+
+.the{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-right: 200px;
+    color: #fff;
+}
+
+.wrapper{
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    perspective: 40em;
+    display: grid;
+    transform-style: preserve-3d;
+}
+
+.card{
+    grid-area: 1 / 1;
+    height: 200px;
+    width: 400px;
+    transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    background: rgb(202, 220, 228);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 500;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.card .enclosed{
+    background: rgb(255, 197, 222);
+    line-height: 1;
+    color: #ffff;
+    padding: 0 5px;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right right;
+}
+
+.wrapper:before {
+    --bw:9px;
+    grid-area: 1 / 1;
+    content: "";
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: calc(-1 * var(--bw));
+    margin-left: calc(-1 * var(--bw));
+    background: transparent;
+    transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    pointer-events: none;
+    border: var(--bw) solid #ffff;
+    box-sizing: content-box;
+}
+
+.wrapper:hover > div,
+.wrapper:hover:before {
+    transform: none;
+}
+
+.wrapper > div,
+.wrapper:before {
+    will-change: transform;
+    transition: .3s transform cubic-bezier(.25, .46, .45, 1);
 }

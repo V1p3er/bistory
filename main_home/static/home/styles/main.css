@@ -137,3 +137,8 @@ span{
 p{
     font-size: 20px;
 }
+
+.sugg{
+    font-size: 30px;
+    align-items: center;
+}

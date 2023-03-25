@@ -12,10 +12,9 @@
 
 .pin {
     background: rgb(68, 91, 59);
-    height: 750px;
+    padding: 40px;
     width: 60%;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .pho img{
@@ -109,36 +108,20 @@ h1{
     box-sizing: content-box;
 }
 
-.wrapper:hover > div,
-.wrapper:hover:before {
+.wrapper:hover > div, .wrapper:hover:before {
     transform: none;
 }
 
-.wrapper > div,
-.wrapper:before {
+.wrapper > div, .wrapper:before {
     will-change: transform;
     transition: .3s transform cubic-bezier(.25, .46, .45, 1);
 }
 
-/***footer*/
+/***footer***/
 footer{
-    height: 250px;
     background: rgb(68, 91, 59);
     margin: 20px;
     padding: 30px;
+    display: flex;
 }
 
-span{
-    font-size: 25px;
-    color: black;
-    border-bottom: 1px solid black;
-}
-
-p{
-    font-size: 20px;
-}
-
-.sugg{
-    font-size: 30px;
-    align-items: center;
-}

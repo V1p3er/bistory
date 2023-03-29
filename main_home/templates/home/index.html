@@ -22,17 +22,40 @@
                     <li> <a href="/menu"> Let's order </a> </li>
                 </ul>
             </div>
-            <ul class="nav">
-                <li> <a href="/"> Home </a></li> <br>
-                <li> <a href="#about"> About us </a></li> <br>
-                <li> <a href="#contact"> Contact us </a></li> <br>
-                <li> <a href="/login"> Login </a></li> <br>
-                <li> <a href=""> App </a></li> <br>
-            </ul>
             <div class="pho">
                 <img src="{% static 'home/img/IMG_20230324_212136_723.jpg' %}">
             </div>
         </nav>
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="icon"> <i class="fa-solid fa-home"></i></span>
+                            <span class="title"> Home </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon"> <i class="fa-solid fa-user"></i></span>
+                            <span class="title"> Login </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon"> <i class="fa fa-map-marker"></i></span>
+                            <span class="title"> map  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon"> <i class="fa fa-instagram"></i></span>
+                            <span class="title"> Instagram </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="pop">
             <img src="{% static 'home/img/IMG_20230324_212128_166.jpg' %}">
             <img src="{% static 'home/img/IMG_20230324_212937_770.jpg' %}">
@@ -68,7 +91,7 @@
                     <span> suggestion </span>
                 </div>
                 <form>
-                    <input type="text" placeholder="type your suggestion...">
+                    <input type="text" placeholder="What's your suggestion...">
                     <input type="submit" value="send">
                 </form>
             </div>

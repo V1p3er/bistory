@@ -24,7 +24,6 @@
 .card{
     height: 600px;
     width: 85%;
-    position: absolute;
     left: 100px;
     top: 70px;
     margin-bottom: 100px;
@@ -46,8 +45,6 @@
 .pin img{
     width: 100%;
     height: 750px;
-    position: absolute;
-    top: 0;
 }
 .fi{
     font-size: 70px;

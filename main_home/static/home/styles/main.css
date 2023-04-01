@@ -14,7 +14,13 @@
 }
 .card-cont{
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 9999;
+    text-align: center;
+    color: #fff;
 }
 .content{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,12 +29,12 @@
 }
 .card{
     height: 600px;
-    width: 85%;
+    width: 75%;
     position: absolute;
     top: 10%;
-    left: 7%;
+    left: 12%;
     margin-bottom: 100px;
-    background: rgb(68, 91, 59);
+    background: rgb(42, 58, 63);
     background: linear-gradient(145deg, rgb(42, 58, 63) 0%, rgba(82, 107, 126, 0.1) 100% );
     border-radius: 30px;
     backdrop-filter: blur(10px);
@@ -49,12 +55,6 @@
     position: relative;
     z-index: 1;
 }
-.text{
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    display: inline-block;
-}
 .pop img{
     margin-top: 100px;
     height: 350px;
@@ -67,21 +67,25 @@
 
 /***menu botton***/
 .menu-butt{
+    position: absolute;
+    top: 50%;
+    left: 60%;
     width: 250px;
     font-size: 20px;
+    display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    text-align: center;
     border-radius: 20px;
     background: #fff;
     z-index: 99999;
 }
 .menu-butt li{
     list-style: none;
+    text-align: center;
 }
 .menu-butt li a{
     text-decoration: none;
-    color: rgb(68, 91, 59);
+    color: rgb(112, 136, 143);
 }
 .menu-butt li:hover{
     cursor: pointer;
@@ -91,17 +95,36 @@
 
 
 /***menu-nav bar***/
-.container{
-    flex-wrap: wrap;
-}
 .nav{
-    background: #000;
     display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 12%;
+    background: rgb(112, 136, 143);
+    z-index: 9999999;
+    border-radius: 30px;
+    text-align: center;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav li a:hover{
+    background: #fff;
+    color: rgb(112, 136, 143);
+    border-radius: 30px;
 }
 
 /***footer***/
 footer{
-    background: rgb(42, 58, 63);
+    background: rgb(112, 136, 143);
     display: flex;
     flex-wrap: wrap;
     color: #fff;

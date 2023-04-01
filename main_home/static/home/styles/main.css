@@ -59,7 +59,7 @@
     z-index: 999999999;
 }
 
-/***menu bottom***/
+/***menu botton***/
 .menu-butt{
     width: 250px;
     font-size: 20px;
@@ -68,7 +68,7 @@
     text-align: center;
     border-radius: 20px;
     background: #fff;
-    z-index: 9999999999999;
+    z-index: 99999;
 }
 .menu-butt li{
     list-style: none;

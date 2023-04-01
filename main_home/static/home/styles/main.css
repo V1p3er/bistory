@@ -24,11 +24,6 @@
 .card{
     height: 600px;
     width: 85%;
-<<<<<<< HEAD
-    left: 100px;
-    top: 70px;
-=======
->>>>>>> 10fc87ea3c6063313995b6f5de7debf64f72890f
     margin-bottom: 100px;
     background: rgb(68, 91, 59);
     background: linear-gradient(145deg, rgb(42, 58, 63) 0%, rgba(82, 107, 126, 0.1) 100% );

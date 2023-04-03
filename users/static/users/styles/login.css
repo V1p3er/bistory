@@ -25,7 +25,7 @@ form{
 h1{
     color: #fff;
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 form input {
     width: 300px;
@@ -34,6 +34,18 @@ form input {
     font-size: 25px;
     border-radius: 10px;
     border: none;
+}
+form input[type=submit]{
+    background: rgb(112, 136, 143);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+form input[type=submit]:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgb(112, 136, 143);
+    transition:  all 0.8;
 }
 form a{
     background: #fff;

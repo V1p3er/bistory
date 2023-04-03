@@ -1,3 +1,31 @@
 *{
-    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    flex-wrap: wrap;
+}
+.nav-items h1{
+    color: rgb(112, 136, 143);
+    text-align: center;
+    margin: 20px;
+    font-size: 55px;
+}
+.items{
+    text-align: center;
+    background: rgb(112, 136, 143);
+}
+.items li{
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+    font-size: 25px;
+}
+.items li a{
+    text-decoration: none;
+    color: #fff;
+}
+.items li a:hover{
+    text-decoration: underline;
 }

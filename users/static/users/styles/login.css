@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgb(112, 136, 143);
+    background: rgb(112, 136, 143); 
 }
 
 form{
@@ -25,13 +25,33 @@ form{
 h1{
     color: #fff;
     font-size: 50px;
+    margin-bottom: 60px;
 }
 form input {
     width: 300px;
     margin: 30px;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
 }
 form input[type=button]{
     background: #fff;
+    color: rgb(112, 136, 143);
     width: 100px;
+    border: none;
+    font-size: 20px;
+}
+form input[type=button]:hover{
+    cursor: pointer;
+    background: rgb(112, 136, 143);
+    color: #fff;
+    transition: all 0.8;
+}
+form a{
+    color: #fff;
+}
+form a:hover{
+    font-size: 20px;
+    transition: all 0.8;
 }

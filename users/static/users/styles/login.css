@@ -1,3 +1,37 @@
 *{
-    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(112, 136, 143);
+}
+
+form{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    padding: 3em;
+    height: 600px;
+    width: 450px;
+    text-align: center;
+    transform: all 0.2s ease-in-out;
+    background: linear-gradient(145deg, rgb(42, 58, 63) 0%, rgba(82, 107, 126, 0.1) 100% ) ;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+}
+form input {
+    width: 300px;
+    margin: 30px;
+    font-size: 30px;
+}
+form input[type=button]{
+    background: #fff;
+    width: 100px;
 }

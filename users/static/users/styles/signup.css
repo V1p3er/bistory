@@ -11,16 +11,15 @@ body{
 form{
     position: absolute;
     top: 10%;
-    left: 35%;
+    left: 28%;
     padding: 3em;
     height: 600px;
-    width: 450px;
+    width: 650px;
     text-align: center;
-    transform: all 0.2s ease-in-out;
     background: linear-gradient(145deg, rgb(42, 58, 63) 0%, rgba(82, 107, 126, 0.1) 100% ) ;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    border-radius: 10px;
+    border-radius: 100%;
 }
 h1{
     color: #fff;

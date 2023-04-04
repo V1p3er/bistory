@@ -31,7 +31,7 @@
     height: 600px;
     width: 75%;
     position: absolute;
-    top: 10%;
+    top: 13%;
     left: 12%;
     margin-bottom: 100px;
     background: rgb(42, 58, 63);
@@ -78,7 +78,6 @@
     border-radius: 20px;
     background: #fff;
     z-index: 99999;
-    text-align: center;
 }
 .menu-butt li{
     list-style: none;
@@ -86,6 +85,7 @@
 .menu-butt li a{
     text-decoration: none;
     color: rgb(112, 136, 143);
+    text-align: center;
 }
 .menu-butt li:hover{
     cursor: pointer;
@@ -98,26 +98,27 @@
 .nav{
     position: absolute;
     top: 3%;
-    left: 13%;
-    display: inline;
-    background: rgb(112, 136, 143);
+    left: 27%;
+    background: #fff;
     z-index: 9999999;
     border-radius: 30px;
     text-align: center;
 }
 .nav li{
     list-style: none;
+    display: inline-block;
+    margin: 10px 30px 10px 30px;
 }
 .nav li a {
     margin-top: 10px;
-    padding: 10px;
-    color: #fff;
+    color: rgb(112, 136, 143);
     text-decoration: none;
     font-size: 25px;
+    padding: 5px;
 }
 .nav li a:hover{
-    background: #fff;
-    color: rgb(112, 136, 143);
+    background: rgb(112, 136, 143);
+    color: #fff;
     border-radius: 30px;
 }
 

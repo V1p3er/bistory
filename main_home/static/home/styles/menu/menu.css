@@ -29,3 +29,50 @@ body{
 .items li a:hover{
     text-decoration: underline;
 }
+
+.menu-pho{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cheese img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}
+.birth img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}
+.donut img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}
+.macaroon img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}
+.cap-cake img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}
+.cookies img{
+    width: 240px;
+    height: 300px;
+    padding: 20px 20px 90px 20px;
+    border: 2px solid rgb(112, 136, 143);
+    border-radius: 10px;
+}

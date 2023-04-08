@@ -29,22 +29,26 @@
                 </div>
             </div>
         </nav>
-        <div class="nav">
-            <ul>
+        <ul class="nav">
+            {% if user.is_authenticated %}
+                <li> <a href="/"> Home</a> </li>
+                <li> <a href="#about"> About </a> </li>
+                <li> <a href="{% url 'logout' %}"> Logout  </a> </li>
+                <li> <a href="/menu"> Menu </a> </li>
+            {% else %}   
                 <li> <a href="/"> Home</a> </li>
                 <li> <a href="#about"> About </a> </li>
                 <li> <a href="/users/login"> Login </a> </li>
                 <li> <a href="/menu"> Menu </a> </li>
-                <li> <a href=""> Particel </a> </li>
-            </ul>
-        </div>
+            {% endif %}
+        </ul>
         <div class="pop">
             <img src="{% static 'home/img/IMG_20230401_125139_963.jpg' %}">
             <img src="{% static 'home/img/IMG_20230401_125148_132.jpg' %}">
             <img src="{% static 'home/img/IMG_20230401_125144_440.jpg' %}">
         </div>
         <footer>
-            <div class="about">
+            <div id="about">
                 <div class="title">
                     <span> About us</span>
                 </div>

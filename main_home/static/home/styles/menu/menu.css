@@ -6,73 +6,94 @@
 body{
     flex-wrap: wrap;
 }
-.nav-items h1{
-    color: rgb(112, 136, 143);
+
+/*** nav bar ***/
+.nav{
+    position: absolute;
+    top: 3%;
+    left: 0;
     text-align: center;
-    margin: 20px;
-    font-size: 55px;
 }
+.nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+.nav li a {
+    margin-top: 10px;
+    color: rgb(112, 136, 143);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+.nav li a:hover{
+   text-decoration: underline;
+}
+
+/*** menu items ***/
 .items{
     text-align: center;
-    background: rgb(112, 136, 143);
+    position: absolute;
+    top: 3%;
+    right: 0;
 }
 .items li{
     list-style: none;
     display: inline-block;
     margin: 25px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .items li a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(112, 136, 143);
 }
 .items li a:hover{
     text-decoration: underline;
 }
 
+/*** menu photo ***/
 .menu-pho{
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cheese{
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.cheese img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#donut{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.birth img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#macaroon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.donut img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#cop-cake{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.macaroon img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#cheese img{
+    margin-top: 8%;
+    width: 20%;
+    height: 355px;
 }
-.cap-cake img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#donut img{
+    margin-top: 8%;
+    width: 20%;
+    height: 355px;
 }
-.cookies img{
-    width: 240px;
-    height: 300px;
-    padding: 20px 20px 90px 20px;
-    border: 2px solid rgb(112, 136, 143);
-    border-radius: 10px;
+#macaroon img{
+    margin-top: 8%;
+    width: 20%;
+    height: 355px;
+}
+#cop-cakes img{
+    margin-top: 8%;
+    width: 20%;
+    height: 355px;
 }

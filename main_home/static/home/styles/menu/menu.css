@@ -55,7 +55,7 @@ body{
 .menu-pho{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #cheese{
     display: flex;
@@ -77,23 +77,36 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#cheese img{
+#cookies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.che img{
     margin-top: 8%;
-    width: 20%;
+    width: 33%;
     height: 355px;
 }
-#donut img{
+.do img{
     margin-top: 8%;
-    width: 20%;
+    width: 33%;
     height: 355px;
 }
-#macaroon img{
+.mac img{
     margin-top: 8%;
-    width: 20%;
+    width: 33%;
     height: 355px;
 }
-#cop-cakes img{
+.cop img{
     margin-top: 8%;
-    width: 20%;
+    width: 33%;
     height: 355px;
 }
+.cook img{
+    margin-top: 8%;
+    width: 33%;
+    height: 355px;
+}
+
+/*** items name ***/

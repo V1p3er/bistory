@@ -8,55 +8,51 @@ body{
 }
 
 /*** nav bar ***/
-.nav{
-    position: absolute;
-    top: 3%;
-    left: 0;
+nav{
+    position: fixed;
+    display: flex;
+    width: 90%;
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    box-sizing: border-box;
+    border: none;
+    background: #fff;
+    z-index: 9999999;
+    border-radius: 30px;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-.nav li{
+nav li{
     list-style: none;
-    display: inline-block;
+    display: flex;
     margin: 15px;
 }
-.nav li a {
+nav li a {
     margin-top: 10px;
     color: rgb(112, 136, 143);
     text-decoration: none;
     font-size: 20px;
     padding: 5px;
 }
-.nav li a:hover{
-   text-decoration: underline;
-}
-
-/*** menu items ***/
-.items{
-    text-align: center;
-    position: absolute;
-    top: 3%;
-    right: 0;
-}
-.items li{
-    list-style: none;
-    display: inline-block;
-    margin: 25px;
-    font-size: 20px;
-}
-.items li a{
-    text-decoration: none;
-    color: rgb(112, 136, 143);
-}
-.items li a:hover{
+nav li a:hover{
     text-decoration: underline;
 }
-
-/*** menu photo ***/
-.menu-pho{
+ul{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
+.nav-right{
+    margin-left: auto;
+    margin-right: 5%;
+}
+.nav-left{
+    margin-left: 5%;
+}
+/*** menu photo ***/
+
 #cheese{
     display: flex;
     justify-content: space-around;
@@ -72,7 +68,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#cop-cake{
+#cop-cakes{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -83,30 +79,18 @@ body{
     flex-wrap: wrap;
 }
 
-.che img{
-    margin-top: 8%;
-    width: 33%;
-    height: 355px;
+.che{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 }
-.do img{
-    margin-top: 8%;
-    width: 33%;
-    height: 355px;
-}
-.mac img{
-    margin-top: 8%;
-    width: 33%;
-    height: 355px;
-}
-.cop img{
-    margin-top: 8%;
-    width: 33%;
-    height: 355px;
-}
-.cook img{
-    margin-top: 8%;
-    width: 33%;
-    height: 355px;
+img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10%;
 }
 
 /*** items name ***/

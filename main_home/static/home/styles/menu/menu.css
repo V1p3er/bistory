@@ -24,7 +24,7 @@ nav{
     border-radius: 30px;
     text-align: center;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-bottom: 3%;
 }
 nav li{
     list-style: none;
@@ -78,7 +78,6 @@ ul{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .che{
     display: flex;
     flex-direction: column;
@@ -87,10 +86,24 @@ ul{
     justify-content: center;
     align-items: center;
 }
+
 img{
     width: 60%;
     height: 60%;
     border-radius: 10%;
 }
+img:hover{
+    width: 63%;
+    height: 63%;
+    transition: all 0.8s;
+}
 
-/*** items name ***/
+/*** items details ***/
+.details{
+    font-size: 20px;
+    color: rgb(112, 136, 143);
+}
+.i{
+    color: rgb(112, 136, 143);
+    z-index: 999;
+}

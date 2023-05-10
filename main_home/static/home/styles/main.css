@@ -17,7 +17,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     top: 25%;
-    left: 20%;
+    right: 20%;
     z-index: 9999;
     text-align: center;
     color: rgb(112, 136, 143);
@@ -68,32 +68,19 @@
     margin-bottom: 100px;
 }
 
-/***menu botton***/
-.menu-butt{
+.firstPHO img{
     position: absolute;
-    top: 50%;
-    left: 60%;
-    width: 250px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    background: rgb(112, 136, 143);
+    left: 15%;
+    top: 20%;
     z-index: 99999;
-    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
-.menu-butt li{
-    list-style: none;
-}
-.menu-butt li a{
-    text-decoration: none;
-    color: #fff;
-}
-.menu-butt li:hover{
-    cursor: pointer;
-    font-size: 23px;
-    transition: all 0.8s;
-}
-
 
 /***menu-nav bar***/
 .nav{

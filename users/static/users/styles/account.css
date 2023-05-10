@@ -1,3 +1,62 @@
+/*instagram: part.icel*/
+
 *{
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* background's balls*/
+.ball{
+    border-radius: 50%;
+    position: absolute;
+    z-index: -5;
+}
+.ball1{
+    transform: translate(200px, -50px);
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(90deg,#ab8b5d,#705c45);
+}
+.ball2{
+    transform: translate(-160px, 100px);
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(90deg,#7f5d36);
+}
+.ball3{
+    transform: translate(-160px, 100px);
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(90deg,#b29e87,#fff);
+}
+
+/* glass card */
+
+#cardWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+}
+.cardContent{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 100px 0 30px 50px;
+}
+.content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+.card{
+    
 }

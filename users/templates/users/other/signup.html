@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="{% static 'users/styles/signup.css' %}">
     <title>signup</title>
 </head>
-   <body>
+<body>
     <div class="contaier">
-        <form>
-           <h1> Bistory </h1>
-           <input type="text" placeholder="Name"> <br>
-           <input type="email" placeholder="Email"> <br>
-           <input type="password" placeholder="Password">
-           <input type="submit" value="Sign up"> <br><br>
-           <a href="/users/login" > Login </a> <br><br><br>
+        <form method="post">
+            {% csrf_token %}
+            <h1> Bistory </h1>
+            <input type="text" placeholder="Name" name="name"> <br>
+            <input type="email" placeholder="Email" name="email"> <br>
+            <input type="password" placeholder="Password" name="password">
+            <input type="submit" value="Sign up"> <br><br>
+            <a href="/users/login" > Login </a> <br><br><br>
         </form>
     </div>
-   </body>
+</body>
 </html>

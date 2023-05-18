@@ -84,6 +84,7 @@
 
 /***menu-nav bar***/
 .nav{
+    position: fixed;
     position: absolute;
     top: 3%;
     left: 32%;

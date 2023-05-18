@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'users.middleware.RedirectAuthenticatedUserMiddleware',
+    'users.middleware.RedirectAuthenticatedUserMiddleware',
+    'users.middleware.RestrictNonAuthenticatedUserMiddleware',
 ]
 
 ROOT_URLCONF = 'bistory.urls'

@@ -12,11 +12,6 @@ nav{
     position: fixed;
     display: flex;
     width: 90%;
-    --fa-style-family-brands: "Font Awesome 6 Brands";
-    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
-    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
-    --fa-style-family-classic: "Font Awesome 6 Free";
-    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
     box-sizing: border-box;
     border: none;
     background: #fff;
@@ -50,6 +45,10 @@ ul{
 }
 .nav-left{
     margin-left: 5%;
+}
+hr{
+    margin-top: 5%;
+    margin-bottom: 10px;
 }
 /*** menu photo ***/
 
@@ -91,7 +90,7 @@ img{
     width: 65%;
     height: 65%;
     border-radius: 10%;
-    margin-top: 15%;
+    margin-top: 35%;
 }
 img:hover{
     width: 68%;
@@ -107,14 +106,98 @@ img:hover{
     margin-top: 15px;
 }
 i{
-    color: rgb(112, 136, 143);
+    color: #fff;
     z-index: 999;
     font-size: 16px;
     margin: 8px;
     align-items: center;
 }
 i:hover{
-    color: rgb(108, 30, 30);
+    color: rgb(112, 136, 143);
     transition: all 0.5s;
 }
 /*** cart shopping ***/
+.card-button{
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(112, 136, 143);
+    outline: none;
+    cursor: pointer;
+    margin: 5%;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    overflow: none;
+    user-select: none;
+    border: none;
+}
+.card-button:hover{
+    background: rgb(22, 39, 45);
+}
+.card-button:active{
+    transform: scale(0.9);
+}
+.card-button.clicked .fa-shopping-cart {
+    animation: card 1.5s ease-in-out forwards;
+}
+.card-button.clicked span.add-to-cart {
+    animation: txt1 1.5s ease-in-out forwards;   -webkit-animation: txt1 1.5s ease-in-out forwards;
+}
+.card-button.clicked span.added {
+    animation: txt2 1.5s ease-in-out forwards;
+}
+@keyframes card {
+    0%{
+        left: -10%;
+    }
+    40%,
+    60%{
+        left: 50%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+@keyframes txt1{
+    0%{
+        opacity: 1;
+    }
+    20%,
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes txt2{
+    0%,
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.card-button.clicked .fa-shopping-cart{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+.card-button span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    font-size: 1.2em;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+.card-button span.add-to-cart{
+    opacity: 1;
+}
+.card-button span.added{
+    opacity: 0;
+}

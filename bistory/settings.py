@@ -49,6 +49,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'users.middleware.RedirectAuthenticatedUserMiddleware',
+    'users.middleware.RedirectAuthenticatedUserMiddleware',
+    'users.middleware.RestrictNonAuthenticatedUserMiddleware',
 ]
 
 ROOT_URLCONF = 'bistory.urls'
@@ -123,3 +126,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'your_email@gmail.com'  # Replace with your actual email address
+EMAIL_HOST_PASSWORD = 'your_password'  # Replace with your actual email password
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'your_email@gmail.com'  # Replace with your actual email address

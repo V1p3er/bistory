@@ -1,19 +1,80 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'users/styles/account.css' %}">
-    <title>account</title>
-
-</head>
-    <body class="main_container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'users/styles/account.css' %}">
+        <script src="https://kit.fontawesome.com/b9928a934b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body class="main">
         <nav>
             <div class="nav_container">
+                <div class="rightNav">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="leftNav">
+                    <div class="dropdown">
+                        <label for="dropdown-check" class="dropdown-toggle">
+                            <i class="far fa-bell"></i>
+                            <img src="{% static 'users/img/avatar.jpg' %}" alt="">
+                            <h2>sara gholami <i class="fas fa-caret-down"></i></h2>
+                        </label>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">User Profile</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
-        
+        <hr>
+        <section class="main-container">
+            <div class="right-container">
+                <div class="imganduser">
+                    <img src="{% static 'users/img/avatar.jpg' %}" alt="" width="20%" style="border-radius: 100%;">
+                    <div>
+                        <h2>sara gholami</h2>
+                        <p>Tehran, Iran</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <form action="" method="get">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="Location" name="location">
+                        </div>
+                        <input type="submit" value="Save changes">
+                    </form>
+                </div>
+            </div>
+            <div class="left-container">
+                <h2>User Profile</h2>
+                <ul class="listleft">
+                    <li><i class="fa-regular fa-user"></i>User Info</li>
+                    <li><i class="fa-regular fa-heart"></i>Favorites</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+                    <li><i class="fa-solid fa-gear"></i>Settings</li>
+                    <li><i class="far fa-bell"></i>Notification</li>
+                </ul>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+            </div>
+        </section>
     </body>
 </html>

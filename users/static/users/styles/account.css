@@ -1,8 +1,248 @@
-*{
-    font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+    font-family: Dosis;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
 }
-.main_container{
-    
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.dropdown img {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.dropdown h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.dropdown i:last-child {
+    margin-left: 5px;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightNav {
+    order: 0;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+}
+
+.leftNav i,
+.dropdown-toggle i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+.leftNav img,
+.dropdown-toggle img {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.leftNav h2,
+.dropdown-toggle h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.leftNav p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+.dropdown-toggle i:last-child {
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 10px;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+
+.right-container {
+    flex-basis: 80%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.imganduser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.imganduser div {
+    margin-left: 15px;
+}
+
+.left-container {
+    flex-basis: 20%;
+    padding: 10px;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 3%;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.left-container h2 {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.left-container ul {
+    list-style: none;
+}
+
+.left-container ul li {
+    margin-bottom: 10px;
+}
+
+.left-container a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 250px;
+    color: #bd0303;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.listleft {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-between;
+}
+
+i {
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styling the form */
+
+.information form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding-bottom: 300px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.information .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    flex-basis: 40%;
+}
+
+.information label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.information input[type="text"],
+.information input[type="email"],
+.information input[type="password"] {
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.information input[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(112, 136, 143);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 70px;
+}
+
+.information input[type="submit"]:hover {
+    background-color: rgb(67, 82, 87);
+}
+
+/* Additional modern styles */
+
+body {
+    background-color: #f5f5f5;
 }

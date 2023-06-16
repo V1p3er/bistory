@@ -2,15 +2,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'home/styles/main.css' %}">
         <script src="https://kit.fontawesome.com/2a87e804a7.js" crossorigin="anonymous"></script>
         <title> Bistory </title>
-    </head>
-    <body>
+</head>
+<body>
         <nav class="main-contaner">
             <div class="pin"> 
                 <img src="{% static 'home/img/IMG_20230401_125131_837.jpg' %}">
@@ -40,6 +40,16 @@
                 <li> <a href="/menu"> Menu </a> </li>
             {% endif %}
         </ul>
+        <div class class="left-menu">
+            <ul class="nav-left">
+                <li> <i class="fa-solid fa-user"></i> </li>
+                <li> <i class="fa-solid fa-cart-shopping"></i> </li>
+            </ul>
+            <div id="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="input" value="search">
+            </div>
+        </div>
         <div class="pop">
             <img src="{% static 'home/img/cro.jfif' %}">
             <img src="{% static 'home/img/Buckwheat Chocolate Hazelnut Bliss Balls _ Rainbow in My Kitchen.jfif' %}">
@@ -86,5 +96,5 @@
                 </form>
             </div>
         </footer>
-    </body>
+</body>
 </html>

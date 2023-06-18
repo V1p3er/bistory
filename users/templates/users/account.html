@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'users/styles/account.css' %}">
         <script src="https://kit.fontawesome.com/b9928a934b.js" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap" rel="stylesheet">
     </head>
@@ -21,7 +22,7 @@
                         <label for="dropdown-check" class="dropdown-toggle">
                             <i class="far fa-bell"></i>
                             <img src="{% static 'users/img/avatar.jpg' %}" alt="">
-                            <h2>sara gholami <i class="fas fa-caret-down"></i></h2>
+                            <h2>{{ name }} <i class="fas fa-caret-down"></i></h2>
                         </label>
                         <ul class="dropdown-menu">
                             <li><a href="#">User Profile</a></li>
@@ -38,30 +39,31 @@
                 <div class="imganduser">
                     <img src="{% static 'users/img/avatar.jpg' %}" alt="" width="20%" style="border-radius: 100%;">
                     <div>
-                        <h2>sara gholami</h2>
+                        <h2>{{ name }}</h2>
                         <p>Tehran, Iran</p>
                     </div>
                 </div>
                 <div class="information">
-                    <form action="" method="get">
+                    <form action="" method="post">
+                        {% csrf_token %}
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Name" name="name">
+                            <input type="text" id="name" placeholder="{{ name }}" name="name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email" name="email">
+                            <input type="email" id="email" placeholder="{{ email }}" name="email">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" placeholder="Password" name="password">
+                            <input type="password" id="password" placeholder="New Password" name="password">
                         </div>
                         <div class="form-group">
                             <label for="location">Location</label>
-                            <input type="text" id="location" placeholder="Location" name="location">
+                            <input type="text" id="location" placeholder="example: La, United States" name="location">
                         </div>
                         <input type="submit" value="Save changes">
-                    </form>
+                    </form>                    
                 </div>
             </div>
             <div class="left-container">

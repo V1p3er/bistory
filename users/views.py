@@ -9,6 +9,7 @@ from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
+from django.contrib.auth.hashers import make_password
 import smtplib
 import ssl
 
@@ -30,7 +31,41 @@ def signup_p(request):
     
     return render(request, 'users/other/signup.html')
 def account_p(request):
-    return render(request, 'users/account.html')
+    if request.method == 'POST':
+        user = request.user
+
+        # Retrieve the new credential values from the form submission
+        name = request.POST['name']
+        email = request.POST['email']
+        password = request.POST['password']
+
+        # Check if the new email is already in use by another user
+        if email != user.email and User.objects.filter(email=email).exists():
+            error_message = "Email is already in use. Please choose a different email."
+            return render(request, 'users/account.html', {'name': name, 'email': email, 'password': password, 'error_message': error_message})
+
+        # Update the user's name
+        user.first_name = name
+        user.save()
+
+        # Update the user's email if it has changed
+        if email != user.email:
+            user.email = email
+            user.save()
+
+        # Update the user's password if it has changed
+        if password:
+            user.set_password(password)
+            user.save()
+
+        # Redirect to a success page or any other desired page
+        return redirect('account')
+
+    name = request.user.first_name
+    email = request.user.username
+    password = None
+    return render(request, 'users/account.html', {'name': name, 'email': email, 'password': password})
+
 def login_p(request):
     if request.method == 'POST':
         email = request.POST['email']

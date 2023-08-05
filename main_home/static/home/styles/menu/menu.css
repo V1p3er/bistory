@@ -46,9 +46,10 @@ ul{
 .nav-left{
     margin-left: 5%;
 }
-.nav-icon {
+a > i
+#cart{
     font-size: 20px;
-    color: rgb(112, 136, 143);
+    color: rgb(112, 136, 143) ;
     position: absolute;
     top: 3%;
     left: 3%;

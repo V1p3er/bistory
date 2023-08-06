@@ -188,9 +188,10 @@ footer{
 .title {
     font-size: 25px;
     border-bottom: 1px solid #fff;
+    margin-bottom: 5%;
 }
 .info{
-    font-size: 20px;
+    font-size: 17px;
 }
 .contact-us{
     margin: 70px;
@@ -198,39 +199,35 @@ footer{
 .contact{
     font-size: 25px;
     border-bottom: 1px solid #fff;
+    margin-bottom: 5%;
 }
 .name{
-    font-size: 20px;
+    font-size: 17px;
 }
-.sugg{
+.suggestion{
     margin: 70px;
 }
-.sugg-tit{
+.suggestion-tit{
     font-size: 25px;
-    align-items: flex-end;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 5%;
 }
-.sugg input[type=text]{
-    flex-wrap: wrap;
-    color: #fff;
-    width: 415px;
-    height: 100px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 15px 0 15px 0;
-    border-radius: 10px;
-}
-.sugg input[type=submit]{
-    width: 60px;
+.suggestion input[type=text]{
+    background: #fff;
+    margin-right: 20%;
     font-size: 15px;
-    padding: 5px;
-    margin: 15px 50px 5px 0;
+    padding: 5%;
+    padding-bottom: 40%;
+    width: 200%;
     border-radius: 10px;
-    display: block;
 }
-.sugg input[type=submit]:hover{
+.suggestion input[type=submit]{
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 50px;
+    color:rgb(112, 136, 143) ;
+}
+.suggestion input[type=submit]:hover{
+    background: #000000;
     cursor: pointer;
-    color: rgb(42, 58, 63);
-    transition: all 0.5s;
 }
-

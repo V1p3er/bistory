@@ -50,61 +50,11 @@ nav {
     align-items: center;
 }
 
-.leftNav i,
-.dropdown-toggle i {
-    margin-right: 10px;
-    font-size: 20px;
-    color: #555;
-}
-
-.leftNav img,
-.dropdown-toggle img {
-    margin-right: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-.leftNav h2,
-.dropdown-toggle h2 {
-    font-size: 18px;
-    margin-bottom: 0;
-    color: #333;
-}
-
 .leftNav p {
     font-size: 14px;
     color: #888;
     margin-bottom: 0;
 }
-
-.dropdown-toggle i:last-child {
-    margin-left: 5px;
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999;
-    display: none;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.dropdown-toggle:hover + .dropdown-menu,
-.dropdown-menu:hover {
-    display: block;
-}
-
 .main-container {
     display: flex;
     justify-content: space-between;

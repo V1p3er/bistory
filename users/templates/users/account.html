@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'users/styles/account.css' %}">
         <script src="https://kit.fontawesome.com/b9928a934b.js" crossorigin="anonymous"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap" rel="stylesheet">
     </head>
     <body class="main">
@@ -23,12 +22,7 @@
                             <i class="far fa-bell"></i>
                             <img src="{% static 'users/img/avatar.jpg' %}" alt="">
                             <h2>{{ name }} <i class="fas fa-caret-down"></i></h2>
-                        </label>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">User Profile</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Logout</a></li>
-                        </ul>
+                        </label>                   
                     </div>
                 </div>
             </div>
@@ -75,7 +69,7 @@
                     <li><i class="fa-solid fa-gear"></i>Settings</li>
                     <li><i class="far fa-bell"></i>Notification</li>
                 </ul>
-                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+                <a href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
             </div>
         </section>
     </body>

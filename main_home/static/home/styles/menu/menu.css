@@ -19,10 +19,6 @@ nav{
     text-align: center;
     margin-left: 5%;
     margin-bottom: 10%;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
 }
 nav li{
     list-style: none;
@@ -38,6 +34,7 @@ nav li a {
 }
 nav li a:hover{
     text-decoration: underline;
+    color: rgb(216, 24, 98);
 }
 ul{
     display: flex;
@@ -62,7 +59,7 @@ hr{
     margin-bottom: 10px;
 }
 /*** menu photo ***/
-#cheese{
+#cheesecake{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -102,19 +99,11 @@ img{
     height: 65%;
     border-radius: 10%;
     margin-top: 35%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
 }
 img:hover{
     width: 68%;
     height: 68%;
     transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    -o-transition: all 0.8s;
 }
 
 /*** items details ***/
@@ -124,18 +113,12 @@ img:hover{
     color: rgb(112, 136, 143);
     margin-top: 15px;
 }
-.menu-photo .i{
-    color: #fff;
-    z-index: 999;
-    font-size: 16px;
-    margin: 8px;
-    margin-right: 1%;
-}
-.menu-photo .i:hover{
-    color: rgb(212, 40, 40);
+/*** card button ***/
+.card-button i:hover{
+    color: rgb(112, 136, 143);
     transition: all 0.5s;
+    align-items: right;
 }
-/*** cart shopping ***/
 .card-button{
     position: relative;
     padding: 10px;
@@ -151,4 +134,8 @@ img:hover{
     overflow: none;
     user-select: none;
     border: none;
+}
+.card-button:hover{
+    background: rgb(216, 24, 98);
+    transition: 0.3s ease-in-out;
 }

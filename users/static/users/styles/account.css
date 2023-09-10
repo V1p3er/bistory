@@ -44,27 +44,19 @@ nav {
 .rightNav {
     order: 0;
 }
-
-.leftNav {
-    display: flex;
-    align-items: center;
-}
-
-.leftNav p {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 0;
+#ha:hover {
+    color: rgb(112, 136, 143);
 }
 .main-container {
     display: flex;
-    justify-content: space-between;
+    
     align-items: normal;
     padding: 10px;
     flex-direction: row-reverse;
     margin-top: 50px;
 }
 
-.right-container {
+.profile {
     flex-basis: 80%;
     background-color: #f9f9f9;
     padding: 10px;
@@ -195,4 +187,222 @@ a {
 
 body {
     background-color: #f5f5f5;
+}
+
+/* fav page */
+
+.favshop {
+    flex-basis: 80%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.favshop h2 {
+    margin-top: 100px;
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.favshop hr {
+    width: 60%;
+    height: 2px; 
+    margin-left: 20%;
+    margin-bottom:  20px;
+    background-color: #333; 
+}
+
+.favshop i.fa-solid {
+    font-size: 48px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    color: rgb(112, 136, 143); 
+}
+
+.favshop h3 {
+    font-size: 20px; 
+    margin-top: 10px;
+    color: #888;
+}
+
+.favshop button {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favshop button:hover {
+    background-color: rgba(88, 108, 114, 0.74);
+}
+
+/* cart page */
+
+.cartshop {
+    flex-basis: 80%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartshop h2 {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cartshop hr {
+    width: 60%;
+    height: 2px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.cartshop i.fa-solid {
+    font-size: 48px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    color: rgb(112, 136, 143);
+}
+
+.cartshop h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #888;
+}
+
+.cartshop button {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cartshop button:hover {
+    background-color: rgba(88, 108, 114, 0.74);
+}
+
+/* notification page */
+
+.notifset {
+    flex-basis: 80%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notifset h2 {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.notifset hr {
+    width: 60%;
+    height: 2px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.notifset i.fa-solid {
+    font-size: 48px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    color: rgb(112, 136, 143);
+}
+
+.notifset h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #888;
+}
+
+/* Styles for toggle switches */
+.notifset .email-toggle,
+.notifset .deactivate-all,
+.notifset .admin-support-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notifset .email-toggle label,
+.notifset .deactivate-all label,
+.notifset .admin-support-toggle label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.notifset .email-toggle input[type="checkbox"],
+.notifset .deactivate-all input[type="checkbox"],
+.notifset .admin-support-toggle input[type="checkbox"] {
+    transform: scale(1.5); /* Increase size of the checkbox */
+}
+
+/* Styles for notification categories */
+.notifset .notification-categories {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.notifset .notification-categories h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notifset .notification-categories ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notifset .notification-categories li {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 5px;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Highlight the selected category */
+.notifset .notification-categories li.active {
+    color: rgb(112, 136, 143);
+    border-bottom: 2px solid rgb(112, 136, 143);
+    padding-bottom: 5px;
 }

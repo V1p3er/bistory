@@ -13,8 +13,6 @@ from django.contrib.auth.hashers import make_password
 import smtplib
 import ssl
 
-
-
 def signup_p(request):
     if request.method == 'POST':
         name = request.POST['name']

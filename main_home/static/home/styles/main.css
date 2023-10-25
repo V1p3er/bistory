@@ -81,30 +81,19 @@ marquee {
     padding: 40px;
     text-align: center;
     direction: right;
-    scrollamount: "100";
-}
-.anim marquee{
-    background: rgb(112, 136, 143);
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-    direction: left;
-    scrollamount: "100";
 }
 .firstPHO img{
     position: absolute;
-    left: 15%;
-    top: 20%;
+    left: 12%;
+    top: 13%;
     z-index: 99999;
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+    width: 530px;
+    height: 600px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+ 
 }
 
 /***menu-nav bar***/
@@ -133,8 +122,9 @@ marquee {
     font-size: 20px;
     padding: 3px;
 }
-.nav li a:hover{
+.nav li :hover{
     text-decoration: underline;
+    color: rgb(216, 24, 98);
 }
 .nav-left{
     position: absolute;

@@ -7,35 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'users/styles/account.css' %}">
         <script src="https://kit.fontawesome.com/b9928a934b.js" crossorigin="anonymous"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap" rel="stylesheet">
     </head>
     <body class="main">
         <nav>
             <div class="nav_container">
                 <div class="rightNav">
-                    <i class="fas fa-bars"></i>
+                    <b><a href="/" id="ha">Bistory</a></b>
                 </div>
                 <div class="leftNav">
                     <div class="dropdown">
                         <label for="dropdown-check" class="dropdown-toggle">
-                            <i class="far fa-bell"></i>
                             <img src="{% static 'users/img/avatar.jpg' %}" alt="">
-                            <h2>{{ name }} <i class="fas fa-caret-down"></i></h2>
-                        </label>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">User Profile</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Logout</a></li>
-                        </ul>
+                            <h2>{{ name }}</h2>
+                        </label>                   
                     </div>
                 </div>
             </div>
         </nav>
         <hr>
-        <section class="main-container">
-            <div class="right-container">
+        <section class="main-container">    
+            <div class="profile" id="profile-container">
                 <div class="imganduser">
                     <img src="{% static 'users/img/avatar.jpg' %}" alt="" width="20%" style="border-radius: 100%;">
                     <div>
@@ -66,17 +59,84 @@
                     </form>                    
                 </div>
             </div>
+            <div class="favshop" id="favorites-container" style="display: none;">
+                
+                <h2>Favorites</h2>
+                <hr>
+                <i class="fa-solid fa-star"></i>
+                <h3>No product in the favorites</h3>
+                <button><a href="#">Return to shop</a></button>
+            </div>
+            <div class="cartshop" id="cart-container" style="display: none;">
+                <h2>Shopping Cart</h2>
+                <hr>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <h3>Your Cart is Empty</h3>
+                <button><a href="#">Continue Shopping</a></button>
+            </div>
+            <div class="notifset" id="notification-container" style="display: none;">
+                <h2>Notifications</h2>
+                <hr>
+                <i class="fa-solid fa-bell"></i>
+                <h3>Your Notifications</h3>
+                
+                <!-- Email Toggle Button -->
+                <div class="email-toggle">
+                    <label for="email-toggle">Receive news by email:</label>
+                    <input type="checkbox" id="email-toggle">
+                </div>
+                <div class="deactivate-all">
+                    <label for="deactivate-toggle">Deactivate all notifications:</label>
+                    <input type="checkbox" id="deactivate-toggle">
+                </div>
+                <div class="admin-support-toggle">
+                    <label for="admin-support-toggle">Receive admin and support notifications:</label>
+                    <input type="checkbox" id="admin-support-toggle">
+                </div>
+            
+                <!-- Categories of Notifications -->
+                <div class="notification-categories">
+                    <h4>Categories:</h4>
+                    <ul>
+                        <li data-category="personal">Personal Notifications</li>
+                        <li data-category="news">News Notifications</li>
+                    </ul>
+                </div>
+            </div>
             <div class="left-container">
                 <h2>User Profile</h2>
                 <ul class="listleft">
-                    <li><i class="fa-regular fa-user"></i>User Info</li>
-                    <li><i class="fa-regular fa-heart"></i>Favorites</li>
-                    <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
-                    <li><i class="fa-solid fa-gear"></i>Settings</li>
-                    <li><i class="far fa-bell"></i>Notification</li>
+                    <li id="userin" onclick="toggleContainer('profile-container')" ><i class="fa-regular fa-user"></i>User Info</li>
+                    <li id="favo" onclick="toggleContainer('favorites-container')"><i class="fa-regular fa-heart"></i>Favorites</li>
+                    <li id="cart" onclick="toggleContainer('cart-container')"><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+                    <li id="noti" onclick="toggleContainer('notification-container')"><i class="far fa-bell"></i>Notification</li>
                 </ul>
-                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+                <a href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
             </div>
         </section>
+        <script>
+            function toggleContainer(containerId) {
+                // Hide all containers
+                document.getElementById('profile-container').style.display = 'none';
+                document.getElementById('favorites-container').style.display = 'none';
+                document.getElementById('cart-container').style.display = 'none';
+                document.getElementById('notification-container').style.display = 'none';
+    
+                // Show the selected container
+                document.getElementById(containerId).style.display = 'block';
+            }
+            const categoryItems = document.querySelectorAll('.notification-categories li');
+
+            categoryItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    // Remove 'active' class from all items
+                    categoryItems.forEach((item) => {
+                        item.classList.remove('active');
+                    });
+            
+                    item.classList.add('active');
+                });
+            });
+        </script>
     </body>
 </html>

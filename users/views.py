@@ -13,8 +13,6 @@ from django.contrib.auth.hashers import make_password
 import smtplib
 import ssl
 
-
-
 def signup_p(request):
     if request.method == 'POST':
         name = request.POST['name']
@@ -79,7 +77,7 @@ def login_p(request):
             login(request, user)
             
             # Redirect to the desired page
-            return redirect('home')
+            return redirect('account')
         else:
             error_message = "Invalid email or password."
             return render(request, 'users/other/login.html', {'error_message': error_message})

@@ -8,3 +8,5 @@ def menu(request):
 def logout_p(request):
     logout(request)
     return redirect('home')
+def cart(request): 
+    return redirect('../users/')

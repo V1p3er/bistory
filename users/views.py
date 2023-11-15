@@ -20,9 +20,12 @@ def signup_p(request):
         password = request.POST['password']
         
         # Create a new user
-        user = User.objects.create_user(username=email, email=email, password=password)
-        user.first_name = name
-        user.save()
+        if User.objects.filter(username=name).exists():
+            raise ValueError('Username already exists')
+        else:
+            user = User.objects.create_user(username=email, email=email, password=password)
+            user.first_name = name
+            user.save()
         
         # Redirect to login page or any other desired page
         return redirect('login')
